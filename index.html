@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ИИ в работе B2B-отдела продаж — AI Camp</title>
+    <meta
+      name="description"
+      content="Двухчасовой тренинг для команды: как устроены языковые модели, какие задачи им можно поручить и до трёх сценариев отдела продаж. Пилот — 30 000 ₽."
+    />
+    <meta property="og:title" content="ИИ в работе B2B-отдела продаж — пилот 30 000 ₽" />
+    <meta
+      property="og:description"
+      content="Два часа: устройство языковых моделей, ограничения, обзор инструментов и до трёх задач отдела продаж."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="theme-color" content="#f3efe6" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">К содержанию</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="#content">AI Camp</a>
+        <nav class="nav" aria-label="Разделы страницы">
+          <a href="#tasks">Задачи</a>
+          <a href="#program">Программа</a>
+          <a href="#instructor">Преподаватель</a>
+          <a href="#contact">Написать</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Практический тренинг для вашей команды</p>
+          <h1>ИИ в работе B2B-отдела продаж</h1>
+          <p class="lede">
+            За два часа разбираем, как языковая модель пишет текст, что ей можно
+            поручить и какие инструменты есть под рукой. Затем переходим к отделу
+            продаж: до трёх задач, которые выбираем заранее.
+          </p>
+          <ul class="facts">
+            <li>2 часа</li>
+            <li>до 15 человек</li>
+            <li>Онлайн или в вашей переговорной</li>
+          </ul>
+        </div>
+
+        <aside class="offer" id="offer">
+          <p class="offer-kicker">Пилот для одной команды</p>
+          <p class="price">30&nbsp;000&nbsp;₽</p>
+          <ul class="offer-list">
+            <li>Занятие до 15 участников</li>
+            <li>Короткий разговор до занятия и выбор до 3 задач</li>
+            <li>Шаблоны для встречи, follow-up и КП</li>
+            <li>Памятка по проверке и работе с данными</li>
+            <li>Короткий отчёт руководителю</li>
+          </ul>
+          <a class="button" href="#contact">Написать о пилоте</a>
+        </aside>
+      </section>
+
+      <section class="section wrap" id="tasks" aria-labelledby="tasks-title">
+        <div class="section-head">
+          <h2 id="tasks-title">Задачи, которые можно принести на тренинг</h2>
+          <p>
+            На занятии разбираем до трёх задач. Какие именно — выбираем на
+            короткой встрече до тренинга. Любую задачу ниже можно разложить на
+            шаги: справка, письмо, сводка, проверка. Именно на этих шагах
+            уместна языковая модель.
+          </p>
+        </div>
+        <div class="carousel" data-carousel>
+          <div class="carousel-bar">
+            <button type="button" data-carousel-prev aria-label="Предыдущие задачи">←</button>
+            <button type="button" data-carousel-next aria-label="Следующие задачи">→</button>
+          </div>
+          <div class="carousel-track">
+            <article class="task-card">
+              <p class="task-index">01</p>
+              <h3>Поиск новых клиентов</h3>
+              <p>Итог шага — разговор с тем, кто принимает решение.</p>
+              <p>Шаги для модели: портрет сегмента, справка о компании, черновик первого письма, сводка ответа перед звонком.</p>
+            </article>
+            <article class="task-card">
+              <p class="task-index">02</p>
+              <h3>Входящие заявки</h3>
+              <p>Итог — заявка разобрана и дошла до нужного менеджера.</p>
+              <p>Шаги для модели: карточка из письма, уточняющие вопросы, черновик первого ответа.</p>
+            </article>
+            <article class="task-card">
+              <p class="task-index">03</p>
+              <h3>Ведение сделки</h3>
+              <p>Итог — договорённости зафиксированы, а не остались в блокноте.</p>
+              <p>Шаги для модели: подготовка к встрече, протокол, follow-up, черновик коммерческого предложения, разбор длинной переписки.</p>
+            </article>
+            <article class="task-card">
+              <p class="task-index">04</p>
+              <h3>Тендеры и закупки</h3>
+              <p>Итог — заявка или ясное решение не участвовать.</p>
+              <p>Шаги для модели: выжимка технического задания, чек-лист требований, черновики разделов по прошлым заявкам.</p>
+            </article>
+            <article class="task-card">
+              <p class="task-index">05</p>
+              <h3>Удержание и развитие клиентов</h3>
+              <p>Итог — продление и понятный повод для следующего разговора.</p>
+              <p>Шаги для модели: сводка по клиенту, повестка встречи, персональное предложение, разбор претензии.</p>
+            </article>
+            <article class="task-card">
+              <p class="task-index">06</p>
+              <h3>Управление отделом</h3>
+              <p>Итог — видно, где сделки стоят и чему учить команду.</p>
+              <p>Шаги для модели: сигналы по воронке, повторяющиеся возражения, черновик отчёта руководителю.</p>
+            </article>
+            <article class="task-card">
+              <p class="task-index">07</p>
+              <h3>Обучение новых менеджеров</h3>
+              <p>Итог — новичок быстрее выходит на живые разговоры.</p>
+              <p>Шаги для модели: ответы по продукту со ссылкой на источник, план на первые месяцы, тренировка разговора.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="program" aria-labelledby="program-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="program-title">Как устроены два часа</h2>
+            <p>
+              Сначала на одной учебной задаче видно, как модель устроена и где
+              она ошибается. Потом те же приёмы переносятся на задачи отдела
+              продаж.
+            </p>
+          </div>
+          <ol class="program">
+            <li>
+              <span class="time">25 мин</span>
+              <div>
+                <h3>Как устроена модель</h3>
+                <p>Генерация текста и коротко — на чём модель учится. Structured output: ответ сразу в нужной форме. Агенты: обвязка вокруг модели, которая ходит в поиск, файлы и другие инструменты.</p>
+              </div>
+            </li>
+            <li>
+              <span class="time">20 мин</span>
+              <div>
+                <h3>Что можно поручить</h3>
+                <p>Какие шаги отдавать модели и где она дописывает лишнее. Персональные данные, чистый контекст и проверка до того, как черновик уходит клиенту.</p>
+              </div>
+            </li>
+            <li>
+              <span class="time">15 мин</span>
+              <div>
+                <h3>Инструменты на одном примере</h3>
+                <p>Алиса, GigaChat, китайские и западные модели. Один и тот же фрагмент задачи, чтобы было видно разницу, а не список названий.</p>
+              </div>
+            </li>
+            <li>
+              <span class="time">60 мин</span>
+              <div>
+                <h3>До трёх задач отдела продаж</h3>
+                <p>Задачи выбраны на предварительной встрече. Каждую раскладываем на шаги и делаем черновик с проверкой.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section wrap" id="demos" aria-labelledby="demos-title">
+        <div class="section-head">
+          <h2 id="demos-title">Как выглядит работа на занятии</h2>
+          <p>
+            Так выглядит практика на задаче отдела продаж. Компания «Нордмаш» и
+            заказчик «Северный контур» вымышлены. Четыре шага: задача,
+            постановка, черновик, проверка. На проверке видно, что нельзя
+            отправлять клиенту.
+          </p>
+        </div>
+
+        <div class="demo" data-demo>
+          <div class="scenario-bar" role="tablist" aria-label="Сценарии">
+            <button
+              class="scenario-tab"
+              type="button"
+              role="tab"
+              id="tab-meet"
+              aria-controls="panel-meet"
+              aria-selected="true"
+              tabindex="0"
+            >
+              Подготовка к встрече
+            </button>
+            <button
+              class="scenario-tab"
+              type="button"
+              role="tab"
+              id="tab-follow"
+              aria-controls="panel-follow"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Письмо после встречи
+            </button>
+            <button
+              class="scenario-tab"
+              type="button"
+              role="tab"
+              id="tab-offer"
+              aria-controls="panel-offer"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Черновик КП
+            </button>
+          </div>
+
+          <div class="scenario" id="panel-meet" role="tabpanel" aria-labelledby="tab-meet">
+            <div class="step-bar" role="tablist" aria-label="Шаги сценария «Подготовка к встрече»">
+              <button type="button" role="tab" aria-selected="true" tabindex="0">Задача</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Постановка</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Черновик</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Проверка</button>
+            </div>
+            <div class="step-panels">
+              <article class="step">
+                <h3>Задача</h3>
+                <p class="step-lead">Менеджеру «Нордмаш» завтра встреча. Времени открывать всё подряд нет, а прийти с общими словами про «цифровизацию» нельзя.</p>
+                <dl class="brief">
+                  <div>
+                    <dt>Кто продаёт</dt>
+                    <dd>ООО «Нордмаш», шкафы управления для промышленной вентиляции.</dd>
+                  </div>
+                  <div>
+                    <dt>С кем встреча</dt>
+                    <dd>Главный инженер складского комплекса «Северный контур».</dd>
+                  </div>
+                  <div>
+                    <dt>Что есть во входящем письме</dt>
+                    <dd>Три площадки. Замена шкафов в 2026 году. Монтаж хотят делать своими электриками. Простой склада критичен. Бюджет и срок поставки не названы.</dd>
+                  </div>
+                  <div>
+                    <dt>Чего менеджер не делал</dt>
+                    <dd>Не открывал сайт заказчика и не проверял, сколько у того объектов на самом деле.</dd>
+                  </div>
+                </dl>
+              </article>
+              <article class="step" hidden>
+                <h3>Постановка</h3>
+                <p class="step-lead">В чат уходит не «подготовь меня к встрече», а заполненный шаблон. Его забирают с занятия.</p>
+                <pre class="sheet" id="template-meet">Роль: менеджер B2B-продаж «Нордмаш». Готовишь черновик к встрече. Решение и отправку делает человек.
+
+Контекст: продаём шкафы управления для промышленной вентиляции. Завтра встреча с главным инженером «Северного контура».
+
+Известно из письма заказчика:
+— три площадки;
+— замена шкафов в 2026 году;
+— монтаж своими электриками;
+— простой склада критичен.
+Неизвестно: бюджет, срок поставки, число объектов у заказчика, требования к простою в часах.
+
+Сделай:
+1. Справку на полстраницы только из известных фактов.
+2. Гипотезы о потребности — отдельным списком, каждая помечена «гипотеза».
+3. Вопросы на встречу, которые закрывают неизвестное.
+
+Критерий: ни одного факта, которого нет в письме. Если данных мало — так и напиши.</pre>
+                <button class="text-button" type="button" data-copy="template-meet">Скопировать шаблон</button>
+              </article>
+              <article class="step" hidden>
+                <h3>Черновик</h3>
+                <p class="step-lead">Так выглядит пригодный ответ: короткий, с пустыми местами там, где фактов не было.</p>
+                <div class="sheet prose">
+                  <p><strong>Факты из письма.</strong> Заказчик планирует в 2026 году заменить шкафы управления вентиляцией на трёх площадках. Монтаж рассчитывает вести своими электриками. Называет критичным простой склада. Бюджет и срок поставки не сообщил.</p>
+                  <p><strong>Гипотезы, не факты.</strong> Шефмонтаж может быть нужен, потому что электрики заказчика не обязаны знать линейку «Нордмаш». Разговор, скорее всего, упрётся в допустимую длительность остановки, а не в функции контроллера.</p>
+                  <p><strong>Спросить на встрече.</strong> Сколько часов простоя допустимо на один шкаф? Кто принимает шкаф и кто подписывает схему? Есть ли уже спецификация по мощности вентиляторов? Когда нужен первый объект, а не «в течение 2026 года»?</p>
+                </div>
+              </article>
+              <article class="step" hidden>
+                <h3>Проверка</h3>
+                <p class="step-lead">Рядом с годным черновиком менеджер разбирает типичную добавку модели и вычёркивает её до встречи.</p>
+                <ul class="checks">
+                  <li class="ok">Факты совпадают с письмом: три площадки, 2026 год, свои электрики, простой.</li>
+                  <li class="ok">Гипотезы подписаны и не смешаны с фактами.</li>
+                  <li class="bad">Модель дописала: «у заказчика 14 складов и сертификация ISO 9001». В письме этого не было, сайт менеджер не открывал. Строку убрать.</li>
+                  <li class="ok">Вопросы можно произнести вслух без внутреннего жаргона.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="scenario" id="panel-follow" role="tabpanel" aria-labelledby="tab-follow" hidden>
+            <div class="step-bar" role="tablist" aria-label="Шаги сценария «Follow-up»">
+              <button type="button" role="tab" aria-selected="true" tabindex="0">Задача</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Постановка</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Черновик</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Проверка</button>
+            </div>
+            <div class="step-panels">
+              <article class="step">
+                <h3>Задача</h3>
+                <p class="step-lead">Встреча прошла. В блокноте обрывки. Письмо нужно отправить сегодня, пока договорённости не разъехались.</p>
+                <div class="sheet prose">
+                  <p>Заметки менеджера, как есть:</p>
+                  <ul>
+                    <li>40 минут, главный инженер.</li>
+                    <li>Площадки: две в Московской области, одна в Туле.</li>
+                    <li>Простой — не больше одной смены на шкаф.</li>
+                    <li>Свои электрики есть, нужен шефмонтаж.</li>
+                    <li>Просят ориентир по сроку на 12 шкафов.</li>
+                    <li>КП ждут до пятницы.</li>
+                    <li>Скидку не обсуждали.</li>
+                    <li>Следующий шаг: КП и схема подключения.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="step" hidden>
+                <h3>Постановка</h3>
+                <pre class="sheet" id="template-follow">Роль: менеджер «Нордмаш». Пишешь follow-up по заметкам встречи. Тон деловой, коротко.
+
+Источник истины — только заметки ниже. Если пункта в заметках нет, не добавляй его в договорённости.
+
+Заметки:
+— 40 минут с главным инженером;
+— две площадки в Московской области, одна в Туле;
+— простой не больше одной смены на шкаф;
+— свои электрики, нужен шефмонтаж;
+— просят срок на 12 шкафов;
+— КП до пятницы;
+— скидку не обсуждали;
+— следующий шаг: КП и схема подключения.
+
+Сделай три блока:
+1. Договорённости.
+2. Открытые вопросы.
+3. Текст письма заказчику до 120 слов.
+
+Критерий: в договорённостях нет скидок, цен и сроков поставки, которых нет в заметках.</pre>
+                <button class="text-button" type="button" data-copy="template-follow">Скопировать шаблон</button>
+              </article>
+              <article class="step" hidden>
+                <h3>Черновик</h3>
+                <div class="sheet prose">
+                  <p><strong>Договорённости.</strong> Шефмонтаж с их электриками. Ограничение простоя: не больше одной смены на шкаф. До пятницы отправить КП и схему подключения на 12 шкафов. Площадки: две в Московской области, одна в Туле.</p>
+                  <p><strong>Открыто.</strong> Срок поставки 12 шкафов ещё не назван. Скидку не обсуждали. Не зафиксировано, кто со стороны заказчика принимает схему.</p>
+                  <p><strong>Письмо.</strong> «Спасибо за разговор. Зафиксировал: три площадки, шефмонтаж вашими электриками, простой не больше одной смены на шкаф. До пятницы пришлю КП и схему подключения на 12 шкафов. Срок поставки уточню отдельно и укажу в КП.»</p>
+                </div>
+              </article>
+              <article class="step" hidden>
+                <h3>Проверка</h3>
+                <ul class="checks">
+                  <li class="ok">Письмо короче разговора и повторяет только то, что было в заметках.</li>
+                  <li class="ok">Срок поставки честно оставлен открытым.</li>
+                  <li class="bad">В первой версии модели стояло: «как договорились, скидка 5% при предоплате». В заметках прямо сказано, что скидку не обсуждали. Предложение убрать до отправки.</li>
+                  <li class="ok">Следующий шаг назван: КП и схема до пятницы.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="scenario" id="panel-offer" role="tabpanel" aria-labelledby="tab-offer" hidden>
+            <div class="step-bar" role="tablist" aria-label="Шаги сценария «Черновик КП»">
+              <button type="button" role="tab" aria-selected="true" tabindex="0">Задача</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Постановка</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Черновик</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1">Проверка</button>
+            </div>
+            <div class="step-panels">
+              <article class="step">
+                <h3>Задача</h3>
+                <p class="step-lead">Руководитель дал бриф устно. Цену за шкаф ещё не подтвердил. КП нужно собрать так, чтобы в нём не появилось обещаний от модели.</p>
+                <dl class="brief">
+                  <div>
+                    <dt>Состав</dt>
+                    <dd>12 шкафов серии НМ-4.</dd>
+                  </div>
+                  <div>
+                    <dt>Поставка</dt>
+                    <dd>6 недель после предоплаты 50%.</dd>
+                  </div>
+                  <div>
+                    <dt>Работы</dt>
+                    <dd>Шефмонтаж — два выезда. Пусконаладка силами заказчика.</dd>
+                  </div>
+                  <div>
+                    <dt>Чего в брифе нет</dt>
+                    <dd>Цены за штуку и срока гарантии.</dd>
+                  </div>
+                </dl>
+              </article>
+              <article class="step" hidden>
+                <h3>Постановка</h3>
+                <pre class="sheet" id="template-offer">Собери черновик коммерческого предложения «Нордмаш» для «Северного контура».
+
+Бриф, и только он:
+— 12 шкафов НМ-4;
+— поставка 6 недель после предоплаты 50%;
+— шефмонтаж: 2 выезда;
+— пусконаладка силами заказчика;
+— цена за шкаф не подтверждена;
+— гарантия не указана.
+
+Структура: предмет, сроки, границы работ, что не входит, условия оплаты, пометки «уточнить».
+
+Запрещено: подставлять цену, скидку, гарантию или срок монтажа. Вместо них пиши «уточняет руководитель до отправки».</pre>
+                <button class="text-button" type="button" data-copy="template-offer">Скопировать шаблон</button>
+              </article>
+              <article class="step" hidden>
+                <h3>Черновик</h3>
+                <div class="sheet prose">
+                  <p><strong>Предмет.</strong> 12 шкафов управления НМ-4.</p>
+                  <p><strong>Срок поставки.</strong> 6 недель после предоплаты 50%.</p>
+                  <p><strong>Входит.</strong> Поставка и шефмонтаж, два выезда.</p>
+                  <p><strong>Не входит.</strong> Пусконаладка и монтаж: их делает заказчик.</p>
+                  <p><strong>Уточнить до отправки.</strong> Цена за шкаф. Срок гарантии. Кто со стороны заказчика принимает шефмонтаж.</p>
+                </div>
+              </article>
+              <article class="step" hidden>
+                <h3>Проверка</h3>
+                <ul class="checks">
+                  <li class="ok">Состав, предоплата и два выезда совпадают с брифом.</li>
+                  <li class="ok">Пусконаладка не попала в состав работ «Нордмаш».</li>
+                  <li class="bad">Модель вставила «186&nbsp;000&nbsp;₽ за шкаф» и «гарантия 36 месяцев». Обоих пунктов в брифе не было. До отправки цену подтверждает руководитель, гарантию либо убирают, либо берут из договора поставки.</li>
+                  <li class="ok">В чистом черновике вместо цифр стоят пометки «уточнить».</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="terms" aria-labelledby="terms-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="terms-title">Что входит в пилот, а что нет</h2>
+          </div>
+          <div class="terms">
+            <article>
+              <h3>Входит</h3>
+              <ul>
+                <li>Разговор на 15 минут: какие три задачи берём, состав группы, критерий удачного занятия.</li>
+                <li>Два часа практики, онлайн или очно.</li>
+                <li>До трёх задач отдела, выбранных до занятия.</li>
+                <li>Памятка: как проверять ответ, какие данные не загружать, когда ИИ не нужен.</li>
+                <li>Шаблоны постановки задачи.</li>
+                <li>Короткий отчёт: что разобрали, где команда споткнулась, какой следующий шаг.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Не входит</h3>
+              <ul>
+                <li>Аудит отдела и перестройка CRM.</li>
+                <li>Массовые рассылки и генерация писем «по базе».</li>
+                <li>Внедрение автоматизаций и разработка программ.</li>
+                <li>Обещание роста выручки или сокращения штата.</li>
+                <li>Работа с персональными данными и коммерческой тайной без отдельного согласования.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="data-note">
+            <h3>Данные на занятии</h3>
+            <p>
+              Упражнения идут на учебных или заранее разрешённых материалах.
+              Клиентские базы, записи разговоров и персональные данные в чат не
+              загружаются, пока компания сама не подтвердит, что это допустимо
+              для выбранного сервиса.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap" id="instructor" aria-labelledby="instructor-title">
+        <div class="instructor">
+          <figure class="portrait">
+            <img src="instructor.jpg" alt="Преподаватель тренинга" width="640" height="800" />
+          </figure>
+          <div>
+            <h2 id="instructor-title">Кто ведёт</h2>
+            <p class="instructor-lead">
+              Больше пяти лет с языковыми моделями: от исследований к системам,
+              которыми пользуются в работе. Сейчас старший инженер — агенты,
+              прикладные сценарии и собственные проекты.
+            </p>
+            <ul class="instructor-list">
+              <li>Окончил МГУ.</li>
+              <li>Работал в Институте системного программирования РАН. Научная статья на ACL, главной конференции по компьютерной лингвистике.</li>
+              <li>Затем Яндекс. Сейчас старший разработчик в HeadHunter.</li>
+              <li>Читает лекции и проводит митапы.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact">
+          <div>
+            <h2 id="contact-title">Пилот на одну команду</h2>
+            <p class="contact-lead">
+              Напишите, если хотите провести занятие для отдела продаж. В письме
+              достаточно названия компании, числа участников и формата: онлайн
+              или очно.
+            </p>
+            <p class="contact-price">30&nbsp;000&nbsp;₽ · 2 часа · до 15 человек</p>
+          </div>
+          <div class="contact-card">
+            <p>Почта</p>
+            <a class="mail" href="mailto:phos_phophyllite@mail.ru?subject=%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%20%C2%AB%D0%98%D0%98%20%D0%B2%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%20B2B-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%C2%BB&amp;body=%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%3A%0A%D0%A0%D0%BE%D0%BB%D1%8C%3A%0A%D0%A1%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B8%3A%0A%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82%3A%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%2F%20%D0%BE%D1%87%D0%BD%D0%BE%0A">phos_phophyllite@mail.ru</a>
+            <p>Telegram</p>
+            <a class="mail" href="https://t.me/Aechmea">@Aechmea</a>
+            <a
+              class="button"
+              href="mailto:phos_phophyllite@mail.ru?subject=%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%20%C2%AB%D0%98%D0%98%20%D0%B2%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%20B2B-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%C2%BB&amp;body=%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%3A%0A%D0%A0%D0%BE%D0%BB%D1%8C%3A%0A%D0%A1%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B8%3A%0A%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82%3A%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%2F%20%D0%BE%D1%87%D0%BD%D0%BE%0A"
+              >Написать о пилоте</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>AI Camp. Корпоративное обучение практическому использованию ИИ.</p>
+        <p>Примеры на странице вымышлены. Это описание занятия, а не юридическое заключение.</p>
+      </div>
+    </footer>
+    <noscript>
+      <style>
+        .demo [hidden] {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <script src="main.js?v=4"></script>
+  </body>
+</html>
